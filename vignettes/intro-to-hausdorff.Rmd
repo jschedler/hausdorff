@@ -1,0 +1,33 @@
+---
+title: "Introduction to Hausdorff Package"
+author: "Julia C Schedler"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+bibliography: /Users/juliaschedler/Dropbox/Research/BibTex/library.bib
+biblio-style: "acm"
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+## Overview
+
+The analysis of spatially aggregated data (usually called lattice data or areal data) typically involes encoding dependence between regions via some sort of neighborhood matrix. The popular contiguity method allows dependence between regions whose boundaries touch which can lead to vastly differing numbers of neighbors and unintuitive implied correlations in the outputted model [@Wall2004]. 
+
+## Functions
+
+The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
+
+    output: 
+      rmarkdown::html_vignette:
+        css: mystyles.css
+
